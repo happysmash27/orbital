@@ -34,6 +34,7 @@ saturn_radius_equatorial  = 60268     * _kilo
 uranus_radius_equatorial  = 25559     * _kilo
 neptune_radius_equatorial = 24764     * _kilo
 
+sun_mu     = sun_mass     * constant_of_gravitation
 mercury_mu = mercury_mass * constant_of_gravitation
 venus_mu   = venus_mass   * constant_of_gravitation
 mars_mu    = mars_mass    * constant_of_gravitation
@@ -63,6 +64,9 @@ uranus_radius_polar  = 24973 * _kilo
 
 neptune_radius_mean  = 24622 * _kilo
 neptune_radius_polar = 24341 * _kilo
+
+sun_radius_mean      = 695700* _kilo
+sun_radius_polar     = 695700* _kilo
 
 # 4.1 s, 56 minutes, 23 hours
 earth_sidereal_day = _timedelta(hours=23, minutes=56, seconds=4.1).total_seconds()

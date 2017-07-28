@@ -14,6 +14,7 @@ __all__ = [
     'saturn',
     'uranus',
     'neptune',
+    'sun',
 ]
 
 
@@ -177,6 +178,17 @@ neptune = Body(
     plot_color='#8da4ff'
 )
 
+sun = Body(
+    mass=oc.sun_mass,
+    mu=oc.sun_mu,
+    mean_radius=oc.sun_radius_mean,
+    equatorial_radius=oc.sun_radius_equatorial,
+    polar_radius=oc.sun_radius_polar,
+    apoapsis_names='apoapsis',
+    periapsis_names='pariapsis',
+    plot_color="#FFFF00"
+)
+
 _defaults = {
     'mercury': mercury,
     'venus': venus,
@@ -185,4 +197,5 @@ _defaults = {
     'jupiter': jupiter,
     'saturn': saturn,
     'uranus': uranus,
-    'neptune': neptune}
+    'neptune': neptune,
+    'sun':sun}
